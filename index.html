@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Universe | Discover Anime</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-fan fa-spin" style="--fa-animation-duration: 3s;"></i>
+            Anime<span>Universe</span>
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search anime...">
+            <i class="fa-solid fa-search search-icon"></i>
+        </div>
+    </nav>
+
+    <!-- Search Results Section (Hidden by default) -->
+    <section id="searchResultsSection" class="section hidden" style="margin-top: 80px;">
+        <h2 class="section-title"><i class="fa-solid fa-magnifying-glass"></i> Search Results</h2>
+        <div id="searchLoader" class="loader"></div>
+        <div id="searchResultsGrid" class="anime-grid"></div>
+    </section>
+
+    <div id="mainContent">
+        <!-- Hero Section -->
+        <header class="hero">
+            <img src="" alt="Hero background" id="heroBg" class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="heroTitle">Discover Your Next Favorite Anime</h1>
+                <p id="heroSynopsis">Explore the ultimate database of anime. Keep track of what you've watched, search for new masterpieces, and dive into the universe of animation.</p>
+                <a href="#trending" class="btn btn-primary">Explore Now</a>
+            </div>
+        </header>
+
+        <!-- Trending Anime -->
+        <section id="trending" class="section">
+            <h2 class="section-title"><i class="fa-solid fa-fire"></i> Trending Now</h2>
+            <div id="trendingLoader" class="loader"></div>
+            <div class="anime-grid" id="trendingGrid">
+                <!-- Cards injected here -->
+            </div>
+        </section>
+
+        <!-- Top 10 Anime -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-ranking-star"></i> Top 10 Anime of All Time</h2>
+            <div id="topLoader" class="loader"></div>
+            <div class="anime-grid" id="topGrid">
+                <!-- Cards injected here -->
+            </div>
+        </section>
+
+        <!-- Upcoming Anime -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-calendar-star"></i> Top Upcoming</h2>
+            <div id="upcomingLoader" class="loader"></div>
+            <div class="anime-grid" id="upcomingGrid">
+                <!-- Cards injected here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Details | Anime Universe</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anime.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-fan fa-spin" style="--fa-animation-duration: 3s;"></i>
+            Anime<span>Universe</span>
+        </a>
+    </nav>
+
+    <div id="loader" class="loader loader-center"></div>
+
+    <div id="content" class="hidden">
+        <!-- Hero Details Banner -->
+        <header class="details-hero">
+            <img src="" alt="" id="heroImg" class="details-hero-bg">
+            <div class="details-hero-overlay"></div>
+            
+            <div class="details-container">
+                <div class="details-poster">
+                    <img src="" alt="Poster" id="posterImg">
+                </div>
+                
+                <div class="details-info">
+                    <h1 id="animeTitle">Loading...</h1>
+                    <div class="anime-tags" id="animeTags">
+                        <!-- Tags injected here -->
+                    </div>
+                    
+                    <div class="anime-stats glass">
+                        <div class="stat">
+                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                            <span id="score">N/A</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-ranking-star" style="color: var(--accent-color);"></i>
+                            <span id="rank">N/A</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-tv" style="color: var(--secondary-color);"></i>
+                            <span id="episodes">? Eps</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-building" style="color: #4CAF50;"></i>
+                            <span id="studio">Unknown Studio</span>
+                        </div>
+                    </div>
+
+                    <div class="synopsis-box">
+                        <h3>Synopsis</h3>
+                        <p id="synopsis">Loading synopsis...</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Characters Section -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-users"></i> Main Characters</h2>
+            <div class="character-grid" id="charGrid">
+                <!-- Character cards injected here -->
+            </div>
+        </section>
+
+        <!-- Trailer Section -->
+        <section class="section" id="trailerSection" style="display: none;">
+            <h2 class="section-title"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Trailer</h2>
+            <div class="trailer-container">
+                <iframe id="trailerIframe" width="100%" height="500" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/details.js"></script>
+</body>
+</html>
